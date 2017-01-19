@@ -1,6 +1,6 @@
 # MeanReversionTest
 ## Check for cointegration between stochastic pairs using Augmented Dickey-Fuller Test
-### Should find that IGD and CYS are individually order of integration 1 and paired 0
+### Given 20 securities, should find that IGD and CYS are individually order of integration 1 and paired 0
 #### 1
 ```r
 adfData = lapply(data, function(x) {
