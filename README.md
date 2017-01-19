@@ -1,5 +1,5 @@
 # MeanReversionTest
-## Check for cointegration between stochastic pairs using Augmented Dickey-Fuller Test
+## Check for [cointegration](https://en.wikipedia.org/wiki/Cointegration) between [stationary](https://en.wikipedia.org/wiki/Stationary_process) pairs using [Augmented Dickey-Fuller](https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test)
 ### Given 20 securities, should find that IGD and CYS are individually order of integration 1 and paired 0
 #### 1
 ```r
