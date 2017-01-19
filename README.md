@@ -1,7 +1,7 @@
 ## Check for [cointegration](https://en.wikipedia.org/wiki/Cointegration) between [stationary](https://en.wikipedia.org/wiki/Stationary_process) pairs using [Augmented Dickey-Fuller](https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test)
 ### Given 20 securities, should find that IGD and CYS are individually order of integration 1 and paired 0.
-### For stationary securities, largest negative ADF slope = short x shares of model independent variable 
-#### 1
+### For stationary securities, largest negative ADF slope = hedge ratio (short x shares of model independent variable) 
+#### Unit Root 1
 ```r
 adfData = lapply(data, function(x) {
   
@@ -27,7 +27,7 @@ Dickey-Fuller = -3.499912, Lag order = 0, p-value = 0.0451887
 alternative hypothesis: stationary
 
 ```
-#### 0
+#### Unit Root 0
 ```r
 model1 <- lm(IGD ~ CYS, data = data)
 model2 <- lm(CYS ~ IGD, data = data)
