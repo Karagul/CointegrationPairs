@@ -32,8 +32,8 @@ alternative hypothesis: stationary
 model1 <- lm(IGD ~ CYS, data = data)
 model2 <- lm(CYS ~ IGD, data = data)
 
-adf.test(model1$residuals, k=0)
-adf.test(model2$residuals, k=0)
+adf.test(model1$residuals, k = 0)
+adf.test(model2$residuals, k = 0)
 ```
 ```
 Augmented Dickey-Fuller Test
