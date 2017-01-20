@@ -4,6 +4,7 @@ library(MuMIn)
 library(dtplyr)
 library(tidyr)
 library(data.table)
+library(dplyr)
 
 options(na.action = "na.fail", digits = 9)
 
